@@ -1,4 +1,14 @@
-#' prompt
+#' chatrbox
+#'
+#' Send a prompt to the ChatGPT in the form "Write
+#' {format} about {topic} in the style of {style}."
+#'
+#' By default, `format`, `topic`, and `style` are randomly
+#' chosen from a list, but you can choose them yourself.
+#'
+#' @param format the format of the response
+#' @param topic the topic of the response
+#' @param style the style of the response
 #'
 #' @return ChatGPT output
 #' @export
