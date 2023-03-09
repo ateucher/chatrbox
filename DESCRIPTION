@@ -12,3 +12,5 @@ RoxygenNote: 7.2.3
 Imports: 
     chatgpt,
     usethis
+URL: https://github.com/ateucher/chatrbox
+BugReports: https://github.com/ateucher/chatrbox/issues
