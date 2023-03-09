@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 chatrbox was motivated by the Posit Open Source group's Spring Cleaning, where we all focus for a week on the parts of package maintenance
 that don't often come to the top of the priority list.
 
-chatrbox has one function, `gc_prompt()` that sends a prompt to ChatGPT
+chatrbox has one function, `chatrbox()` that sends a prompt to ChatGPT
 in the form: "Write {format} about {topic} in the style of {style}".
 By default, `format`, `topic`, and `style` are randomly chosen from a 
 list, but you can choose them yourself. The pre-populated list of topics
