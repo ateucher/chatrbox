@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# chatrbox
+
+chatrbox was motivated by the Posit Open Source group's Spring Cleaning, where we all focus for a week on the parts of package maintenance
+that don't often come to the top of the priority list.
+
+chatrbox has one function, `gc_prompt()` that sends a prompt to ChatGPT
+in the form: "Write {format} about {topic} in the style of {style}".
+By default, `format`, `topic`, and `style` are randomly chosen from a 
+list, but you can choose them yourself. The pre-populated list of topics
+was motivated by our Spring Cleaning activities.
+
+## Installation
+
+You can install the development version of chatrbox like so:
+
+``` r
+# install.packages("pak")
+pak::pak("ateucher/chatrbox")
+```
+
+## Examples
+
+Using the defaults:
+
+```{r example}
+library(chatrbox)
+
+chatrbox()
+```
+
+With custom prompts:
+
+```{r}
+chatrbox(format = "a short political speech", 
+         topic = "why R progammers love cats", 
+         style = "Mary Poppins")
+```
