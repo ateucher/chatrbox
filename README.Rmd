@@ -24,6 +24,10 @@ By default, `format`, `topic`, and `style` are randomly chosen from a
 list, but you can choose them yourself. The pre-populated list of topics
 was motivated by our Spring Cleaning activities.
 
+## Requirements
+
+chatrbox uses the [chatgpt R package](https://github.com/jcrodriguez1989/chatgpt) to send the prompts to ChatGPT. You will need to get and store an OpenAI API key, which you can do following the [instructions](https://github.com/jcrodriguez1989/chatgpt#requirements) on the chatgpt package GitHub page.
+
 ## Installation
 
 You can install the development version of chatrbox like so:
