@@ -18,7 +18,7 @@ ChatGPT output. The prompt that was submitted is saved in an attribute.
 }
 \description{
 Send a prompt to the ChatGPT in the form "Write
-{format} about {topic} in the style of {style}."
+\{format\} about \{topic\} in the style of \{style\}."
 }
 \details{
 By default, \code{format}, \code{topic}, and \code{style} are randomly
