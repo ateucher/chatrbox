@@ -52,7 +52,9 @@ pick_topic <- function(topics = c(
   "spring cleaning",
   "code refactoring",
   "software codes of conduct",
-  "the usethis R package")) {
+  "the usethis R package",
+  "a reprex",
+  "restarting your R session")) {
   pick(topics)
 }
 
@@ -63,11 +65,17 @@ pick_style <- function(topics = c(
   "Roald Dahl",
   "a sports commentator",
   "a standup comedian",
-  "a pirate")) {
+  "a pirate",
+  "a southern grandmother",
+  "a valley girl",
+  "Eminem",
+  "a cowboy",
+  "a yoga instructor",
+  "Werner Herzog")) {
   pick(topics)
 }
 
-pick <- function(x) sample(x, 1, replace = TRUE)
+pick <- function(x) sample(x, 1)
 
 as.chatgpt_response <- function(x, prompt) {
   attr(x, "prompt") <- prompt
@@ -80,6 +88,6 @@ print.chatgpt_response <- function(x, ...) {
   x <- strsplit(x, "\\n")[[1]]
   cli::cat_boxx(
     cli::ansi_strwrap(x, width = cli::console_width() - 10),
-    col = "black", border_col = "darkred"
+    border_col = "darkred"
   )
 }
