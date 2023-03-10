@@ -10,7 +10,7 @@
 #' @param topic the topic of the response
 #' @param style the style of the response
 #'
-#' @return ChatGPT output
+#' @return ChatGPT output. The prompt that was submitted is saved in an attribute.
 #' @export
 chatrbox <- function(format = pick_format(),
                      topic = pick_topic(),

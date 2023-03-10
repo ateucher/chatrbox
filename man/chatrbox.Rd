@@ -14,7 +14,7 @@ chatrbox(format = pick_format(), topic = pick_topic(), style = pick_style())
 \item{style}{the style of the response}
 }
 \value{
-ChatGPT output
+ChatGPT output. The prompt that was submitted is saved in an attribute.
 }
 \description{
 Send a prompt to the ChatGPT in the form "Write
